@@ -1,0 +1,44 @@
+Pages to update with back arrow and remove bottom nav:
+
+STAFF PAGES:
+- InviteStaff
+- StaffDetail
+
+SERVICES PAGES:
+- ServicesList
+- AddService
+- EditService  
+
+OPERATING HOURS PAGES:
+- OperatingHours
+- BlackoutDates
+- AddBlackoutDate
+- CapacityRules
+
+BOOKINGS (remaining):
+- CancelBooking
+
+FINANCE (remaining):
+- TransactionsList
+- TransactionDetail
+- SettlementLedger
+- SettlementDetail
+
+REPORTS (remaining):
+- ReportViewer
+- ScheduleReports
+
+AUDIT & SUPPORT:
+- AuditLogs
+- AuditLogDetail
+- HelpCenter
+- CreateTicket
+- TicketsList
+- TicketDetail
+
+Pattern for each:
+1. Remove: import { BottomNav } from '../components/aba/BottomNav';
+2. Remove: const [activeTab, setActiveTab] = useState('...');
+3. Add: showBack and onBackClick to AppTopBar
+4. Remove: <BottomNav activeTab={activeTab} onTabChange={setActiveTab} />
+5. Change: pb-20 to nothing in overflow div
