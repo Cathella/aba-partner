@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Full-bleed background for maskable icon (safe zone is inner 80%) -->
+  <rect width="512" height="512" fill="#56D8A8"/>
+  <!-- Horizontal bar of cross (slightly smaller for maskable safe zone) -->
+  <rect x="128" y="220" width="256" height="72" rx="14" fill="white"/>
+  <!-- Vertical bar of cross -->
+  <rect x="220" y="128" width="72" height="256" rx="14" fill="white"/>
+</svg>
